@@ -1,27 +1,51 @@
 {
   "expo": {
     "name": "afrobeauty-app",
-    "slug": "afrobeauty-app",
+    "slug": "dpatrol-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo_new.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo_new.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tinsoft.afrobeautyapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "60825c69-03e1-483c-992f-e07b5ac2f874"
+      }
+    },
+    "owner": "tinsoft",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/064ac54a-97b4-4d67-af31-f16d2a99225b"
     }
   }
 }
